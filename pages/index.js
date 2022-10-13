@@ -11,8 +11,6 @@ const Background = styled.div`
   padding: 0;
   height: 100%;
   width: 100vw;
-  background-image: url('img/background.jpg');
-  background-size: cover;
 `
 
 export default function Home() {
