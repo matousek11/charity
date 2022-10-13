@@ -14,17 +14,18 @@ const center = {
   lng: 15.615315,
 }
 
-const handleClick = (ev, data, maxDistance, setIsVisible) => {
+const handleClick = (ev, data, maxDistance, setIsVisible, setFilteredData) => {
   console.log(data)
   const lat = ev.latLng.lat()
   const lng = ev.latLng.lng()
   const filteredData = filterCharitys(lng, lat, maxDistance, data)
-  console.log(filteredData)
+  setFilteredData(filteredData)
   setIsVisible(true)
 }
 
 const map = () => {
   const [data, setData] = useState()
+  const [filteredData, setFilteredData] = useState()
   const [distance, setDistance] = useState(50)
   const [isVisible, setIsVisible] = useState(false)
 
@@ -39,11 +40,13 @@ const map = () => {
           mapContainerStyle={containerStyle}
           center={center}
           zoom={10}
-          onClick={(ev) => handleClick(ev, data, distance, setIsVisible)}
+          onClick={(ev) =>
+            handleClick(ev, data, distance, setIsVisible, setFilteredData)
+          }
         ></GoogleMap>
         <Slider distance={distance} setDistance={setDistance} />
       </LoadScript>
-      {isVisible && <Table data={data} />}
+      {isVisible && <Table data={filteredData} setIsVisible={setIsVisible} />}
     </div>
   )
 }

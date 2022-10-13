@@ -1,8 +1,12 @@
 import React from 'react'
 
-const ButtonClose = ({ text }) => {
+const ButtonClose = ({ text, setIsVisible }) => {
   return (
-    <button type="button" className="btn btn-outline-danger">
+    <button
+      type="button"
+      className="btn btn-outline-danger"
+      onClick={() => setIsVisible(false)}
+    >
       Zavřít
     </button>
   )
