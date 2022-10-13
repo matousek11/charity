@@ -19,7 +19,7 @@ const TableStyle = styled.table`
   max-height: 60%;
 `
 
-const Table = () => {
+const Table = ({ data }) => {
   return (
     <>
       <Background />

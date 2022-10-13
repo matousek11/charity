@@ -42,7 +42,7 @@ const map = () => {
         ></GoogleMap>
         <Slider distance={distance} setDistance={setDistance} />
       </LoadScript>
-      {isVisible && <Table />}
+      {isVisible && <Table data={data} />}
     </div>
   )
 }
