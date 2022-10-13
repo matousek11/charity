@@ -5,15 +5,7 @@ import Table from '../src/modules/common/Table'
 import styles from '../styles/Home.module.css'
 import styled from 'styled-components'
 
-const Background = styled.div`
-  top: 0;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100vw;
-  background-image: url('img/background.jpg');
-  background-size: cover;
-`
+const Background = styled.div``
 
 export default function Home() {
   return (
@@ -23,7 +15,7 @@ export default function Home() {
         <link rel="icon" href="img/logo_icon_prevest.svg" />
       </Head>
       <div>
-        <div className="p-4 p-my-5 mx-4 my-4 rounded bg-light ">
+        <div className="p-4 p-my-5 mx-4 my-0 rounded bg-light ">
           <div className="col-md-6 px-0">
             <h1 className="display-4">O projektu</h1>
             <p className="lead my-3">

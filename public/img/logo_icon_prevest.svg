@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="100"
-   height="100"
-   viewBox="0 0 26.458333 26.458333"
+   width="499"
+   height="499"
+   viewBox="0 0 132.02708 132.02708"
    version="1.1"
    id="svg5"
    inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
@@ -17,7 +17,7 @@
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:dc="http://purl.org/dc/elements/1.1/">
   <title
-     id="title10945">logo_icon_prevest</title>
+     id="title10945">logo</title>
   <sodipodi:namedview
      id="namedview7"
      pagecolor="#ffffff"
@@ -33,9 +33,9 @@
      width="200.44679mm"
      units="px"
      inkscape:snap-global="false"
-     inkscape:zoom="8.1437115"
-     inkscape:cx="45.43383"
-     inkscape:cy="45.126844"
+     inkscape:zoom="2.0359279"
+     inkscape:cx="241.65886"
+     inkscape:cy="202.11915"
      inkscape:window-width="1920"
      inkscape:window-height="1001"
      inkscape:window-x="-9"
@@ -63,7 +63,7 @@
        orientation="0,-1"
        id="guide7089" />
     <sodipodi:guide
-       position="164.30569,88.336643"
+       position="139.49443,88.285744"
        orientation="0,-1"
        id="guide7091" />
     <sodipodi:guide
@@ -83,7 +83,7 @@
        orientation="0,-1"
        id="guide7099" />
     <sodipodi:guide
-       position="75.352722,148.25125"
+       position="75.536508,80.934259"
        orientation="1,0"
        id="guide9385" />
     <sodipodi:guide
@@ -114,49 +114,74 @@
        position="152.91089,36.508673"
        orientation="0,-1"
        id="guide10119" />
+    <sodipodi:guide
+       position="55.871286,70.825967"
+       orientation="1,0"
+       id="guide4080" />
+    <sodipodi:guide
+       position="74.249998,56.122997"
+       orientation="0,-1"
+       id="guide4082" />
   </sodipodi:namedview>
   <defs
-     id="defs2" />
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lstart"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lstart"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.8) translate(12.5,0)"
+         style="fill-rule:evenodd;fill:context-stroke;stroke:context-stroke;stroke-width:1.0pt"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path12756" />
+    </marker>
+  </defs>
   <g
      inkscape:label="Vrstva 1"
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(-2.0288658,-42.005627)">
-    <circle
-       style="fill:#ff2c36;fill-opacity:1;stroke:#ffffff;stroke-width:0.948304;stroke-opacity:1"
+    <ellipse
+       style="fill:#e8433a;fill-opacity:1;stroke:#ffffff;stroke-width:4.73269;stroke-opacity:1"
        id="path846"
-       cx="15.26936"
-       cy="55.246132"
-       r="12.722853" />
+       cx="68.096931"
+       cy="108.0737"
+       rx="63.495998"
+       ry="63.495785" />
     <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.790056;stroke-opacity:1"
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.32718;stroke-opacity:1;paint-order:markers fill stroke"
+       id="rect7203-2"
+       width="19.492193"
+       height="98.311913"
+       x="98.327888"
+       y="-117.12974"
+       transform="rotate(90)" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:4.327;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers stroke fill;marker-end:url(#Arrow1Lstart)"
        id="rect7203"
-       width="3.2428448"
-       height="19.69907"
-       x="13.640115"
-       y="45.388767" />
+       width="19.492193"
+       height="98.311913"
+       x="58.311787"
+       y="58.878693" />
     <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.790056;stroke-opacity:1"
-       id="rect9273"
-       width="19.69907"
-       height="3.1944435"
-       x="5.4120011"
-       y="53.616882" />
-    <rect
-       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.790056;stroke-opacity:1"
-       id="rect9393"
-       width="6.5824904"
-       height="6.4856901"
-       x="-31.154833"
-       y="46.815834"
-       transform="rotate(-44.575596)" />
+       style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:7.95704;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke"
+       id="rect13211"
+       width="35.60825"
+       height="35.60825"
+       x="-50.467373"
+       y="105.08481"
+       transform="rotate(-47.164422)" />
   </g>
   <metadata
      id="metadata10943">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
-        <dc:title>logo_icon_prevest</dc:title>
+        <dc:title>logo</dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>

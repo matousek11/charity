@@ -37,6 +37,13 @@ const Layout = ({ children }) => {
                 </Link>
               </li>
               <li className="nav-item">
+                <Link href="/">
+                  <a className="nav-link" href="#">
+                    Tabulka charit <span className="sr-only"></span>
+                  </a>
+                </Link>
+              </li>
+              <li className="nav-item">
                 <Link href="/map-charity">
                   <a className="nav-link" href="#">
                     Mapa charit
