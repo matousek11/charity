@@ -16,5 +16,8 @@
   "devDependencies": {
     "eslint": "8.25.0",
     "eslint-config-next": "12.3.1"
-  }
+  },
+  "main": "index.js",
+  "author": "lukas matousek <matousek1199@seznam.cz>",
+  "license": "MIT"
 }
