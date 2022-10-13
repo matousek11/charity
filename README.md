@@ -1,34 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Charita
 
-## Getting Started
+## Rozcestník
+* [O aplikaci](#o-aplikaci)
+* [Použité technologie](#použité-technologie)
+* [Instalace](#instalace)
 
-First, run the development server:
+## O aplikaci
 
-```bash
-npm run dev
-# or
+Aplikace využívá otevřená data KHK a byla vyvinuta během [Hackathonu 2022](https://www.datakhk.cz/pages/hackathony). Jejím cílem je ukázat uživateli sbírky v jeho okolí, tak aby mohl darovat své peníze na něco v jeho okolí. Uživatel tedy zvolí rádius a poté klikne na mapu a v okruhu rádiusu, který nastavil se mu poté zobrazí seznam veřejných sbírek a informace o nich.
+
+Zde je vidět landing page s popisem aplikace:
+![VSUHK landing page](/VSUHK-landing page.png)
+Zde je vidět mapa s výběrem rádiusu:
+![VSUHK mapa](/VSUHK-mapa)
+Zde jsou vidět data v okolí dle zvoleného rádiusu:
+![VSUHK data](/VSUHK-data)
+
+## Použité technologie
+
+- React
+- Next.js
+- google maps api
+- [Data KHK-veřejné sbírky](https://www.datakhk.cz/datasets/d9c2591d1ba14f8187970bb5311b2bdc_0/about)
+
+## Instalace
+- spustit přes batch: 
+```
+yarn install
 yarn dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
