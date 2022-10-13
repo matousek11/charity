@@ -7,6 +7,7 @@ import {
   loadData,
   returnCharitys,
 } from '../src/services/DataService'
+import Slider from '../src/modules/common/Slider'
 
 const containerStyle = {
   width: '100%',
@@ -28,6 +29,7 @@ const handleClick = (ev, data) => {
 
 const map = () => {
   const [data, setData] = useState()
+  const [distance, setDistance] = useState(1)
 
   useEffect(() => {
     loadData().then((data) => setData(data))
@@ -41,15 +43,11 @@ const map = () => {
           center={center}
           zoom={10}
           onClick={(ev) => handleClick(ev, data)}
-        >
-          <></>
-        </GoogleMap>
+        ></GoogleMap>
+        <Slider distance={distance} setDistance={setDistance} />
       </LoadScript>
     </div>
   )
 }
-
-<label for="vzdalenost_slider" class="form-label">Dosah</label>
-<input type="range" class="form-range" id="vzdalenost_slider"></input>
 
 export default map
