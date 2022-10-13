@@ -1,12 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api'
-import Head from 'next/head'
-import styled from 'styled-components'
-import {
-  filterCharitys,
-  loadData,
-  returnCharitys,
-} from '../src/services/DataService'
+import { filterCharitys, loadData } from '../src/services/DataService'
+import Table from '../src/modules/common/Table'
 import Slider from '../src/modules/common/Slider'
 
 const containerStyle = {
@@ -19,17 +14,18 @@ const center = {
   lng: 15.615315,
 }
 
-const handleClick = (ev, data) => {
+const handleClick = (ev, data, maxDistance) => {
   console.log(data)
   const lat = ev.latLng.lat()
   const lng = ev.latLng.lng()
-  const filteredData = filterCharitys(lng, lat, 30, data)
+  const filteredData = filterCharitys(lng, lat, maxDistance, data)
   console.log(filteredData)
 }
 
 const map = () => {
   const [data, setData] = useState()
   const [distance, setDistance] = useState(1)
+  const [isVisible, setIsVisible] = useState(true)
 
   useEffect(() => {
     loadData().then((data) => setData(data))
@@ -42,10 +38,11 @@ const map = () => {
           mapContainerStyle={containerStyle}
           center={center}
           zoom={10}
-          onClick={(ev) => handleClick(ev, data)}
+          onClick={(ev) => handleClick(ev, data, distance)}
         ></GoogleMap>
         <Slider distance={distance} setDistance={setDistance} />
       </LoadScript>
+      {isVisible && <Table />}
     </div>
   )
 }

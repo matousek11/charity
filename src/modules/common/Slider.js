@@ -40,7 +40,7 @@ const Slider = ({ distance, setDistance }) => {
           value={distance}
           onChange={(ev) => setDistance(ev.target.value)}
           type="range"
-          class="form-range"
+          className="form-range"
           id="vzdalenost_slider"
         />
         <Distance>{distance} km</Distance>

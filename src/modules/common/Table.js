@@ -1,12 +1,31 @@
 import Button from './Button'
 import React from 'react'
+import styled from 'styled-components'
+
+const Background = styled.div`
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 25;
+`
+
+const MainDiv = styled.div`
+  z-index: 30;
+  top: 0;
+  position: absolute;
+  background-color: white;
+`
+const TableStyle = styled.table`
+  max-height: 60%;
+`
 
 const Table = () => {
   return (
     <>
-      <div className="mx-5 px-5 my-5 py-2" id="sbirky">
+      <Background />
+      <MainDiv className="mx-5 px-5 my-5 py-2" id="sbirky">
         <div className="h3 text-center">Sbírky</div>
-        <table className="table table-hover table-striped">
+        <TableStyle className="table table-hover table-striped">
           <thead>
             <tr>
               <th>Název</th>
@@ -37,8 +56,8 @@ const Table = () => {
               </td>
             </tr>
           </tbody>
-        </table>
-      </div>
+        </TableStyle>
+      </MainDiv>
     </>
   )
 }
