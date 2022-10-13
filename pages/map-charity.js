@@ -19,10 +19,10 @@ const center = {
 }
 
 const handleClick = (ev, data) => {
+  console.log(data)
   const lat = ev.latLng.lat()
   const lng = ev.latLng.lng()
-  console.log(data)
-  const filteredData = filterCharitys(25, data)
+  const filteredData = filterCharitys(lng, lat, 30, data)
   console.log(filteredData)
 }
 
