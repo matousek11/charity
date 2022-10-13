@@ -39,7 +39,17 @@ const Layout = ({ children }) => {
               </li>
             </ul>
           </div>
-          <input type="text" placeholder="Search.."></input>
+          <form class="form-inline">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Vyhledávání dle měst"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Vyhledat
+            </button>
+          </form>
         </nav>
       </div>
       {children}

@@ -26,7 +26,7 @@ const map = () => {
             console.log('longitude = ', ev.latLng.lng)
           }}
         >
-          {/* Child components, such as markers, info windows, etc. */}
+          {/* Child components, such as markers, info windows, etc.xy */}
           <></>
         </GoogleMap>
       </LoadScript>
