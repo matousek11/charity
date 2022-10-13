@@ -67,14 +67,7 @@ const Table = ({ data, setIsVisible }) => {
                         <td>{charity.properties.ico}</td>
                         <td>{charity.properties.cislo_bankovniho_uctu}</td>
                         <td>{charity.properties.nazev_okresu}</td>
-                        <td>
-                          <a href="#">
-                            <Button
-                              text="Zobrazit více"
-                              isDisplayed={setIsDisplayed}
-                            />
-                          </a>
-                        </td>
+                        <td></td>
                       </tr>
                     )
                   })}

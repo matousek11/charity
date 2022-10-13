@@ -6,7 +6,7 @@ const Background = styled.div`
   margin: 0 auto;
 `
 
-const Item = ({ charity, setIsDisplayed }) => {
+const Item = ({ charity, setIsDisplayed, id }) => {
   return (
     <>
       <div className="container">
@@ -20,10 +20,14 @@ const Item = ({ charity, setIsDisplayed }) => {
             <p>{charity.properties.cislo_bankovniho_uctu}</p>
             <h6>Webové stránky</h6>
             <p>{charity.properties.www}</p>
-            <ButtonCloseStyle
-              text="Zavřít tabulku"
-              setIsVisible={setIsDisplayed}
-            />
+
+            <button
+              onClick={() => setIsDisplayed(true)}
+              type="button"
+              className="btn btn-outline-dark"
+            >
+              Zavřít tabulku
+            </button>
           </Background>
         </div>
       </div>
