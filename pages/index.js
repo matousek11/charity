@@ -23,11 +23,7 @@ export default function Home() {
               památek, výstavbu nového kina nebo pomoct lidem se zdravotním
               postížením.
             </p>
-            <p className="lead mb-0">
-              <a href="#" className="text-white">
-                Přejít na filtr
-              </a>
-            </p>
+            <p className="lead mb-0"></p>
           </div>
         </div>
         <div className="row mx-2">
