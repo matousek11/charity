@@ -5,11 +5,9 @@ import Table from '../src/modules/common/Table'
 import styles from '../styles/Home.module.css'
 import styled from 'styled-components'
 
-const Background = styled.div``
-
 export default function Home() {
   return (
-    <Background>
+    <>
       <Head>
         <title>VSÚKHK</title>
         <link rel="icon" href="img/logo_icon_prevest.svg" />
@@ -65,6 +63,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </Background>
+    </>
   )
 }

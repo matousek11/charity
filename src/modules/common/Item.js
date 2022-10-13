@@ -1,27 +1,34 @@
 import React from 'react'
+import styled from 'styled-components'
 
-const Item = () => {
+const Background = styled.div`
+  background-color: lightgray !important;
+  margin: 0 auto;
+`
+
+const Item = ({ charity, setIsDisplayed, id }) => {
   return (
     <>
       <div className="container">
         <div className="row">
-          <div className="col-md-4 rounded bg-info">
-            <h4>Detailnější info</h4>
-            <h2>Apropo Jičín o. p. s.</h2>
-            <p>
-              Pomáháme rodinám, které pečují o dítě s postižením a dospělým
-              osobám s postižením, žít co nejnormálnější život. A to
-              prostřednictvím sociálních služeb, podpůrných terapií,
-              volnočasových aktivit pro děti a dospělé s postižením a také
-              nezbytnou podporou pečujících osob na Jičínsku.
-            </p>
+          <Background className="col-md-4 rounded">
+            <h2>{charity.properties.nazev}</h2>
+            <p>{charity.properties.ucel}</p>
             <h6>IČO</h6>
-            <p>01599682</p>
+            <p>{charity.properties.ico}</p>
             <h6>Číslo účtu</h6>
-            <p>263060806/0300</p>
+            <p>{charity.properties.cislo_bankovniho_uctu}</p>
             <h6>Webové stránky</h6>
-            <p>https://apropojicin.cz</p>
-          </div>
+            <p>{charity.properties.www}</p>
+
+            <button
+              onClick={() => setIsDisplayed(true)}
+              type="button"
+              className="btn btn-outline-dark"
+            >
+              Zavřít tabulku
+            </button>
+          </Background>
         </div>
       </div>
     </>
