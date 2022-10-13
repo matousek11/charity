@@ -3,6 +3,7 @@ import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api'
 import { filterCharitys, loadData } from '../src/services/DataService'
 import Table from '../src/modules/common/Table'
 import Slider from '../src/modules/common/Slider'
+import Ukazatel from '../src/modules/common/Ukazatel'
 
 const containerStyle = {
   width: '100%',
@@ -46,6 +47,7 @@ const map = () => {
         ></GoogleMap>
         <Slider distance={distance} setDistance={setDistance} />
       </LoadScript>
+      <Ukazatel />
       {isVisible && <Table data={filteredData} setIsVisible={setIsVisible} />}
     </div>
   )
