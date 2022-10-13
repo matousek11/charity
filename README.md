@@ -12,9 +12,9 @@ Aplikace využívá otevřená data KHK a byla vyvinuta během [Hackathonu 2022]
 Zde je vidět landing page s popisem aplikace:
 ![VSUHK landing page](/VSUHK-landing page.png)
 Zde je vidět mapa s výběrem rádiusu:
-![VSUHK mapa](/VSUHK-mapa)
+![VSUHK mapa](/VSUHK-mapa.png)
 Zde jsou vidět data v okolí dle zvoleného rádiusu:
-![VSUHK data](/VSUHK-data)
+![VSUHK data](/VSUHK-data.png)
 
 ## Použité technologie
 
