@@ -22,11 +22,11 @@ const map = () => {
           center={center}
           zoom={10}
           onClick={(ev) => {
-            console.log('latitide = ', ev.latLng.lat)
-            console.log('longitude = ', ev.latLng.lng)
+            console.log('latitide = ', ev.latLng.lat())
+            console.log('longitude = ', ev.latLng.lng())
           }}
         >
-          {/* Child components, such as markers, info windows, etc.xy */}
+          {/* Child components, such as markers, info windows, etc. */}
           <></>
         </GoogleMap>
       </LoadScript>

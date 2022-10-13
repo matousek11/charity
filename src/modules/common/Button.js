@@ -2,7 +2,7 @@ import React from 'react'
 
 const Button = ({ text }) => {
   return (
-    <button type="button" class="btn btn-outline-dark">
+    <button type="button" className="btn btn-outline-dark">
       Zjistit více
     </button>
   )
