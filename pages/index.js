@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Charita</title>
+        <title>VSÚKHK</title>
         <link rel="icon" href="img/logo_icon_prevest.svg" />
       </Head>
       <div>
