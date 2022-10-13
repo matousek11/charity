@@ -17,9 +17,16 @@ const map = () => {
   return (
     <div>
       <LoadScript googleMapsApiKey="AIzaSyByft-k4seLg0milNzy2vE4oSEjhRmjjAY">
-        <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={10}>
+        <GoogleMap
+          mapContainerStyle={containerStyle}
+          center={center}
+          zoom={10}
+          onClick={(ev) => {
+            console.log('latitide = ', ev.latLng.lat)
+            console.log('longitude = ', ev.latLng.lng)
+          }}
+        >
           {/* Child components, such as markers, info windows, etc. */}
-          <Marker position={{ lat: 50.178574, lng: 15.814149 }} />
           <></>
         </GoogleMap>
       </LoadScript>

@@ -1,5 +1,6 @@
 import Button from './Button'
 import React from 'react'
+import Link from 'next/link'
 
 const Layout = ({ children }) => {
   return (
@@ -23,27 +24,22 @@ const Layout = ({ children }) => {
           <div className="collapse navbar-collapse" id="navbarText">
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Domů <span className="sr-only"></span>
-                </a>
+                <Link href="/">
+                  <a className="nav-link" href="#">
+                    Domů <span className="sr-only"></span>
+                  </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Všechny charity
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  Filtr charit
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#">
-                  O projektu
-                </a>
+                <Link href="/map-charity">
+                  <a className="nav-link" href="#">
+                    Mapa charit
+                  </a>
+                </Link>
               </li>
             </ul>
           </div>
+          <input type="text" placeholder="Search.."></input>
         </nav>
       </div>
       {children}
