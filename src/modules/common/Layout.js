@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
           </button>
           <div className="collapse navbar-collapse" id="navbarText">
             <ul className="navbar-nav mr-auto">
-              <li className="nav-item active">
+              <li className="nav-item">
                 <a className="nav-link" href="#">
                   Domů <span className="sr-only"></span>
                 </a>
