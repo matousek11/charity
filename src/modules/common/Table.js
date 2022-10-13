@@ -1,4 +1,5 @@
 import Button from './Button'
+import ButtonClose from './ButtonClose'
 import React from 'react'
 import styled from 'styled-components'
 
@@ -25,7 +26,7 @@ const Table = ({ data }) => {
   return (
     <>
       <Background />
-      <MainDiv className="mx-5 px-5 my-5 py-2" id="sbirky">
+      <MainDiv className="mx-5 px-5 my-5 py-2 rounded" id="sbirky">
         <div className="h3 text-center">Sbírky</div>
         <TableScroll>
           <TableStyle className="table table-hover table-striped">
@@ -59,6 +60,7 @@ const Table = ({ data }) => {
             </tbody>
           </TableStyle>
         </TableScroll>
+        <ButtonClose text="Zobrazit více" />
       </MainDiv>
     </>
   )
