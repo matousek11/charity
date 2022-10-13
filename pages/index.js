@@ -1,6 +1,7 @@
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
+import Head from 'next/head'
+import Image from 'next/image'
+import Table from '../src/modules/common/Table'
+import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
@@ -9,7 +10,9 @@ export default function Home() {
         <title>Charita</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <p>úvod</p>
+      <div>
+        <Table />
+      </div>
     </>
-  );
+  )
 }
