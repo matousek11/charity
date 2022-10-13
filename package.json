@@ -12,6 +12,7 @@
     "@googlemaps/react-wrapper": "^1.1.35",
     "@react-google-maps/api": "^2.13.1",
     "bootstrap": "^5.2.2",
+    "geolib": "^3.3.3",
     "leaflet": "^1.9.2",
     "leaflet-defaulticon-compatibility": "^0.1.1",
     "leaflet-geosearch": "^3.7.0",
