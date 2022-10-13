@@ -1,11 +1,12 @@
+import Button from './Button'
 import React from 'react'
 
 const Table = () => {
   return (
     <>
-      <div class="mt-5 pb-5" id="cenik">
-        <div class="h3">Sbírky</div>
-        <table class="table table-hover table-striped">
+      <div className="mx-5 px-5 my-5 py-2" id="sbirky">
+        <div className="h3 text-center">Sbírky</div>
+        <table className="table table-hover table-striped">
           <thead>
             <tr>
               <th>Název</th>
@@ -16,6 +17,7 @@ const Table = () => {
               <th>Stránky</th>
               <th>Okres</th>
               <th>Obec</th>
+              <th></th>
             </tr>
           </thead>
           <tbody>
@@ -28,6 +30,11 @@ const Table = () => {
               <td>https://apropojicin.cz</td>
               <td>Jičín</td>
               <td>Jičín</td>
+              <td>
+                <a href="#">
+                  <Button text="Zobrazit více" />
+                </a>
+              </td>
             </tr>
           </tbody>
         </table>

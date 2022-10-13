@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <Head>
         <title>Charita</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="img/logo_icon_prevest.svg" />
       </Head>
       <div>
         <Table />
