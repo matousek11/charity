@@ -1,4 +1,4 @@
-import { Button } from 'bootstrap'
+import Button from './Button'
 import React from 'react'
 
 const Layout = ({ children }) => {
