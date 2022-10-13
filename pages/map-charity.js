@@ -49,4 +49,7 @@ const map = () => {
   )
 }
 
+<label for="vzdalenost_slider" class="form-label">Dosah</label>
+<input type="range" class="form-range" id="vzdalenost_slider"></input>
+
 export default map

@@ -6,9 +6,15 @@ const Layout = ({ children }) => {
   return (
     <>
       <div>
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav className="navbar navbar-expand-md navbar-dark bg-dark pl-4">
           <a className="navbar-brand" href="#">
-            <img src="/img/logo.svg" width="30" height="30" alt="" />
+            <img
+              className="mx-4"
+              src="/img/logo.svg"
+              width="30"
+              height="30"
+              alt="logo"
+            />
           </a>
           <button
             className="navbar-toggler"
