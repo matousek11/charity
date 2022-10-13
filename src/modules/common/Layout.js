@@ -45,7 +45,6 @@ const Layout = ({ children }) => {
             </ul>
           </div>
         </nav>
-        <Button text="Jméno komponenty" />
       </div>
       {children}
     </>
