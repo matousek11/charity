@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Item from '../src/modules/common/Item'
 import Table from '../src/modules/common/Table'
 import styles from '../styles/Home.module.css'
 
@@ -12,6 +13,7 @@ export default function Home() {
       </Head>
       <div>
         <Table />
+        <Item />
       </div>
     </>
   )
